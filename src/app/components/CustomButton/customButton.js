@@ -11,6 +11,7 @@ function CustomButton({color, bgColor, brRadius, iconPath, iconAlt, btnText}) {
         padding: "0.7rem 1rem",
         fontWeight: "600",
         border: "0.5px solid rgb(119, 128, 161)",
+        fontSize: { xs: "0.6rem", md: "0.875rem" },
       }}
       startIcon={
         <Image

@@ -6,7 +6,6 @@ import StatsCard from "../../StatsCard/StatsCard";
 function Section1() {
   return (
     <Box
-      height="100vh"
       sx={{
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
@@ -34,15 +33,16 @@ function Section1() {
             backgroundColor: "rgba(255, 196, 31, .14)",
           }}
         >
-          Hi! I'm <span style={{ color: '#000000' }}>Naveen Kumar</span>
+          Welcome to{" "}
+          <span style={{ color: "#000000" }}>Naveen Sharma & Party</span>
         </Typography>
         <Typography
           sx={{
-            fontSize: "50px",
+            fontSize: { xs: "1.875rem", md: "50px" },
             fontWeight: "700",
           }}
         >
-          Jagran, Bhajan & Mata Ki Chowki Singer
+          Famous for Mata ki Chowki, Jagran & Kirtan
         </Typography>
         <Typography
           sx={{
@@ -50,7 +50,7 @@ function Section1() {
             lineHeight: "2",
           }}
         >
-          Devotional singer Naveen Kumar performs in Jagrans and Mata Ki
+          Devotional singer Naveen Sharma performs in Jagrans and Mata Ki
           Chowkis, creating a spiritual atmosphere with his bhajans.
         </Typography>
 
@@ -74,15 +74,16 @@ function Section1() {
         </Box>
 
         <Box
-        sx={{
+          sx={{
             display: "flex",
-            gap: '8rem',
+            // flexDirection: { xs: "column", md: "row" },
+            gap: { xs: "1.5rem", md: "8rem" },
             marginTop: "0.8rem",
-        }}
+          }}
         >
-            <StatsCard number={"150+"} label="Clients" />
-            <StatsCard number={"120+"} label="Projects" />
-            <StatsCard number={"20+"} label="Years Experience" />
+          <StatsCard number={"150+"} label="Clients" />
+          <StatsCard number={"120+"} label="Projects" />
+          <StatsCard number={"20+"} label="Years Experience" />
         </Box>
       </Box>
       <Box
@@ -96,6 +97,7 @@ function Section1() {
           src="/Photos/Photo_4.png"
           width="590"
           height="590"
+          style={{ width: "100%", height: "auto" }}
           alt="Photo_1"
         />
       </Box>

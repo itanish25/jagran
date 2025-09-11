@@ -3,6 +3,9 @@
 import Banner from "@/app/components/Banner/banner";
 import Navbar from "@/app/components/Navbar/navbar";
 import Section1 from "@/app/components/Sections/Section1/Section1";
+import Section2 from "@/app/components/Sections/Section2/Section2";
+import Section3 from "@/app/components/Sections/Section3/Section3";
+import YouTubeEmbed from "@/app/components/YouTubeEmbed/YouTubeEmbed";
 import MediaCarousel from "@/app/components/MediaCarousel/mediaCarousel";
 import Cards from "@/app/components/Cards/cards";
 import Discription from "@/app/components/Discription/discription";
@@ -19,9 +22,11 @@ export default function Home() {
       <Banner />
       <Navbar />
       <Section1 />
-      {/* <MediaCarousel items={items} />
-      <Cards />
-      <Discription /> */}
+      <Section2 />
+      <Section3 />
+      {/* <MediaCarousel items={items} /> */}
+      {/* <Cards /> */}
+      {/* <Discription /> */}
       <br />
       <br />
       <br />

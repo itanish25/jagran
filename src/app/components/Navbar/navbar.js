@@ -15,8 +15,8 @@ import Button from "@mui/material/Button";
 const pages = [
   "Home",
   "About",
+  "Events",
   "Contact us",
-  "Gallery",
   "Clients",
   "Let's connect",
 ];
@@ -36,7 +36,7 @@ function ResponsiveAppBar() {
     <AppBar
       position="static"
       sx={{
-        padding: "0.3rem 6rem",
+        padding: "0.3rem 3rem",
         backgroundColor: "#000000",
         marginTop: "2rem",
       }}

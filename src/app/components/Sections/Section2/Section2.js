@@ -5,6 +5,7 @@ import InfoCard from "@/app/components/InfoCard/InfoCard";
 function Section2() {
   return (
     <section
+      id="About"
       style={{
         padding: "5rem 3rem",
       }}
@@ -59,7 +60,14 @@ function Section2() {
             lineHeight: "1.5",
           }}
         >
-          I'm a devotional singer who performs in Jagrans, Mata Ki Chowkis, and Bhakti programs. With my soulful voice, I spread peace, devotion, and happiness. Invite me to make your religious events more spiritual and memorable. I believe music is a way to connect with the divine, and through bhajans I try to bring people closer to Maa Durga and God. Every performance is not just a program for me, but a prayer from my heart. My aim is to create a positive and divine atmosphere where everyone feels blessed and joyful.
+          I'm a devotional singer who performs in Jagrans, Mata Ki Chowkis, and
+          Bhakti programs. With my soulful voice, I spread peace, devotion, and
+          happiness. Invite me to make your religious events more spiritual and
+          memorable. I believe music is a way to connect with the divine, and
+          through bhajans I try to bring people closer to Maa Durga and God.
+          Every performance is not just a program for me, but a prayer from my
+          heart. My aim is to create a positive and divine atmosphere where
+          everyone feels blessed and joyful.
         </Typography>
         <Box
           sx={{

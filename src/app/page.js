@@ -1,21 +1,13 @@
 "use client";
 
-import Banner from "@/app/components/Banner/banner";
+import Banner from "@/app/components/Banner/Banner";
 import Navbar from "@/app/components/Navbar/navbar";
 import Section1 from "@/app/components/Sections/Section1/Section1";
 import Section2 from "@/app/components/Sections/Section2/Section2";
 import Section3 from "@/app/components/Sections/Section3/Section3";
-import YouTubeEmbed from "@/app/components/YouTubeEmbed/YouTubeEmbed";
-import MediaCarousel from "@/app/components/MediaCarousel/mediaCarousel";
-import Cards from "@/app/components/Cards/cards";
-import Discription from "@/app/components/Discription/discription";
+import Section4 from "@/app/components/Sections/Section4/Section4";
 
 export default function Home() {
-  const items = [
-    // { type: "video", src: "/Intro_Video.mp4" },
-    // { type: "image", src: "/1.jpg" },
-    // { type: "image", src: "/2.jpg" },
-  ];
 
   return (
     <main>
@@ -24,9 +16,7 @@ export default function Home() {
       <Section1 />
       <Section2 />
       <Section3 />
-      {/* <MediaCarousel items={items} /> */}
-      {/* <Cards /> */}
-      {/* <Discription /> */}
+      <Section4 />
       <br />
       <br />
       <br />

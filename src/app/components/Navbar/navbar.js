@@ -11,6 +11,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
+import Link from "next/link";
 
 const pages = [
   "Home",
@@ -57,24 +58,6 @@ function ResponsiveAppBar() {
               alignItems: "center",
             }}
           >
-            {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
-            {/* <Typography
-              variant="h5"
-              noWrap
-              component="a"
-              href="#app-bar-with-responsive-menu"
-              sx={{
-                mr: 2,
-                display: { xs: "none", md: "flex" },
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
-              }}
-            >
-              Jagran
-            </Typography> */}
             <Image src="/Photos/logo2.png" alt="logo" width="180" height="50" />
           </Box>
 
@@ -82,7 +65,7 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                // onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
                   display: "block",
@@ -101,7 +84,7 @@ function ResponsiveAppBar() {
                       }),
                 }}
               >
-                {page}
+                <Link href={`#${page}`}>{page}</Link>
               </Button>
             ))}
           </Box>
@@ -110,11 +93,13 @@ function ResponsiveAppBar() {
         <Box
           sx={{
             display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
+            // justifyContent: "space-around",
+            // alignItems: "center",
           }}
         >
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box
+            sx={{ display: { xs: "flex", md: "none" }, marginRight: "1rem" }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -149,32 +134,15 @@ function ResponsiveAppBar() {
                       textAlign: "center",
                     }}
                   >
-                    {page}
+                    <Link href={`#${page}`}>{page}</Link>
                   </Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-
-          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            Jagran
-          </Typography>
+          <Box sx={{ display: { xs: "flex", md: "none" } }}>
+            <Image src="/Photos/logo2.png" alt="logo" width="180" height="50" />
+          </Box>
         </Box>
       </Box>
     </AppBar>

@@ -1,7 +1,20 @@
 import { Button } from "@mui/material";
 import Image from "next/image";
 
-function CustomButton({color, bgColor, brRadius, iconPath, iconAlt, btnText}) {
+function CustomButton({
+  color,
+  bgColor,
+  brRadius,
+  iconPath,
+  iconAlt,
+  btnText,
+  openLink = "https://www.youtube.com/@NaveenSharma-mg7nc/videos",
+}) {
+  
+  const handleClick = () => {
+    window.open(openLink, "_blank");
+  };
+
   return (
     <Button
       sx={{
@@ -13,14 +26,8 @@ function CustomButton({color, bgColor, brRadius, iconPath, iconAlt, btnText}) {
         border: "0.5px solid rgb(119, 128, 161)",
         fontSize: { xs: "0.6rem", md: "0.875rem" },
       }}
-      startIcon={
-        <Image
-          src={iconPath}
-          alt={iconAlt}
-          width={24}
-          height={24}
-        />
-      }
+      startIcon={<Image src={iconPath} alt={iconAlt} width={24} height={24} />}
+      onClick={handleClick}
     >
       {btnText}
     </Button>

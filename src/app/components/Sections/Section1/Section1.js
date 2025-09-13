@@ -1,11 +1,12 @@
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
-import CustomButton from "../../CustomButton/customButton";
-import StatsCard from "../../StatsCard/StatsCard";
+import CustomButton from "@/app/components/CustomButton/CustomButton";
+import StatsCard from "@/app/components/StatsCard/StatsCard";
 
 function Section1() {
   return (
     <Box
+      id="Home"
       sx={{
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
@@ -23,19 +24,32 @@ function Section1() {
           padding: "5rem 3rem",
         }}
       >
-        <Typography
+        <Box
           sx={{
-            alignSelf: "flex-start", // keeps it aligned to the left
-            fontSize: "1.125rem",
-            fontWeight: "600",
+            width: "fit-content",
             padding: "0.625rem",
-            color: "rgb(255 196 31)",
             backgroundColor: "rgba(255, 196, 31, .14)",
           }}
         >
-          Welcome to{" "}
-          <span style={{ color: "#000000" }}>Naveen Sharma & Party</span>
-        </Typography>
+          <Typography
+            sx={{
+              fontSize: "1.125rem",
+              fontWeight: "600",
+              color: "rgb(255 196 31)",
+            }}
+          >
+            Welcome to
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: "1.125rem",
+              fontWeight: "600",
+              color: "#000000",
+            }}
+          >
+            Naveen Sharma & Party
+          </Typography>
+        </Box>
         <Typography
           sx={{
             fontSize: { xs: "1.875rem", md: "50px" },
@@ -76,7 +90,6 @@ function Section1() {
         <Box
           sx={{
             display: "flex",
-            // flexDirection: { xs: "column", md: "row" },
             gap: { xs: "1.5rem", md: "8rem" },
             marginTop: "0.8rem",
           }}

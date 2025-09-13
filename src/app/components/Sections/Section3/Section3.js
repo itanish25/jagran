@@ -5,6 +5,7 @@ import YouTubeEmbed from "@/app/components/YouTubeEmbed/YouTubeEmbed";
 function Section3() {
   return (
     <section
+      id="Events"
       style={{
         display: "flex",
         flexDirection: "column",
@@ -60,7 +61,9 @@ function Section3() {
           textAlign: "center",
         }}
       >
-        Watch the devotional singing in Jagrans, Mata Ki Chowkis, and Bhakti programs. Enjoy soulful bhajans that spread peace, happiness, and devotion.
+        Watch the devotional singing in Jagrans, Mata Ki Chowkis, and Bhakti
+        programs. Enjoy soulful bhajans that spread peace, happiness, and
+        devotion.
       </Typography>
 
       <Box

@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
-import CustomButton from "../../CustomButton/customButton";
-import StatsCard from "../../StatsCard/StatsCard";
+import CustomButton from "@/app/components/CustomButton/CustomButton";
+import StatsCard from "@/app/components/StatsCard/StatsCard";
 
 function Section1() {
   return (

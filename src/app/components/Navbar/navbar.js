@@ -17,8 +17,8 @@ const pages = [
   "Home",
   "About",
   "Events",
+  "Projects",
   "Contact us",
-  "Clients",
   "Let's connect",
 ];
 
@@ -32,6 +32,16 @@ function ResponsiveAppBar() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const phoneNumber = "+919717715315"; // include country code without spaces
+  const message = "Hello, I want to know more about your Jagran event."; // optional pre-filled message
+
+  const handleClickWhatsApp = (page) => {
+    if (page === "Let's connect") {
+      const url = `https://wa.me/${phoneNumber.replace("+", "")}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank"); // opens in new tab or WhatsApp app on mobile
+    }
+  }
 
   return (
     <AppBar
@@ -65,23 +75,23 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                // onClick={handleCloseNavMenu}
+                onClick={() => handleClickWhatsApp(page)}
                 sx={{
                   my: 2,
                   display: "block",
                   fontSize: "0.9rem",
                   ...(page === "Let's connect"
                     ? {
-                        color: "#000000",
-                        backgroundColor: "#FFFFFF",
-                        borderRadius: "0.2rem",
-                        "&:hover": {
-                          backgroundColor: "#f0f0f0",
-                        },
-                      }
+                      color: "#000000",
+                      backgroundColor: "#FFFFFF",
+                      borderRadius: "0.2rem",
+                      "&:hover": {
+                        backgroundColor: "#f0f0f0",
+                      },
+                    }
                     : {
-                        color: "white",
-                      }),
+                      color: "white",
+                    }),
                 }}
               >
                 <Link href={`#${page}`}>{page}</Link>
@@ -93,8 +103,6 @@ function ResponsiveAppBar() {
         <Box
           sx={{
             display: "flex",
-            // justifyContent: "space-around",
-            // alignItems: "center",
           }}
         >
           <Box

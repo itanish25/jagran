@@ -19,31 +19,39 @@ function Section2() {
       >
         <Box
           sx={{
-            color: "#FFFFFF",
-            backgroundColor: "rgb(153, 79, 245)",
-            display: "inline-flex",
-            gap: "0.5rem",
-            alignItems: "center",
+            display: "flex",
             justifyContent: "center",
-            padding: "0.8rem 1.25rem",
-            borderRadius: "9999px",
-            width: "fit-content",
+            alignItems: "center",
           }}
         >
-          <Image
-            src="/Photos/about-me-icon.png"
-            alt="about-me"
-            width="18"
-            height="18"
-          />
-          <Typography
+          <Box
             sx={{
-              fontWeight: "600",
-              fontSize: "0.875rem",
+              color: "#FFFFFF",
+              backgroundColor: "rgb(153, 79, 245)",
+              display: "inline-flex",
+              gap: "0.5rem",
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "0.8rem 1.25rem",
+              borderRadius: "9999px",
+              width: "fit-content",
             }}
           >
-            ABOUT ME
-          </Typography>
+            <Image
+              src="/Photos/about-me-icon.png"
+              alt="about-me"
+              width="18"
+              height="18"
+            />
+            <Typography
+              sx={{
+                fontWeight: "600",
+                fontSize: "0.875rem",
+              }}
+            >
+              ABOUT
+            </Typography>
+          </Box>
         </Box>
         <Typography
           sx={{
@@ -81,7 +89,7 @@ function Section2() {
           <InfoCard heading={"Phone"} content={"+91-9717715315"} />
           <InfoCard heading={"Experience"} content={"20+ years"} />
           <InfoCard heading={"Projects"} content={"120+"} />
-          <InfoCard heading={"Language"} content={"Hindi"} />
+          <InfoCard heading={"Language"} content={"Hindi, English"} />
         </Box>
       </Box>
     </section>

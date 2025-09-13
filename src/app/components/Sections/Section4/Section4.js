@@ -1,8 +1,16 @@
 import Section4_1 from "./Section4_1/Section4_1";
+import CustomeButton from "@/app/components/CustomButton/CustomButton";
 
 function Section4() {
   return (
-    <>
+    <section
+      id="Projects"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       <Section4_1
         title="Mata ka Jagran"
         heading="Experience the Divine with Devotional Mata Ka Jagran"
@@ -24,7 +32,13 @@ function Section4() {
         photoPath="/Photos/Photo_7.png"
         openLink={"https://www.youtube.com/watch?v=JRfl20DbzFE"}
       />
-    </>
+      <CustomeButton
+        color="#FFFFFF"
+        bgColor="#000000"
+        btnText="View All Projects"
+        brRadius={"0.2rem"}
+      />
+    </section>
   );
 }
 

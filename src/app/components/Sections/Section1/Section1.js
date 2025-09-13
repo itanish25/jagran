@@ -84,6 +84,7 @@ function Section1() {
             iconPath={"/Photos/listen-to-bhajan-icon.png"}
             iconAlt={"listen jagran"}
             btnText={"Listen Jagran"}
+            openLink={"https://www.youtube.com/@NaveenSharma-mg7nc/featured"}
           />
         </Box>
 
@@ -108,6 +109,7 @@ function Section1() {
       >
         <Image
           src="/Photos/Photo_4.png"
+          // src="/Photos/Photo_6_2.png"
           width="590"
           height="590"
           style={{ width: "100%", height: "auto" }}

@@ -23,7 +23,7 @@ function Banner() {
         >
           <Typography sx={{ display: "flex", alignItems: "center", gap: 1 }}>
             <LocalPhoneIcon fontSize="small" />
-            9717715315
+            +91-9717715315
           </Typography>
           <Typography sx={{ display: "flex", alignItems: "center", gap: 1 }}>
             <EmailIcon fontSize="small" />

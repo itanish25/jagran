@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import CustomButton from "@/app/components/CustomButton/CustomButton";
 import StatsCard from "@/app/components/StatsCard/StatsCard";
+import { numberOfClients, numberOfProjects, yearsOfExperience } from "@/app/constants/constants";
 
 function Section1() {
   return (
@@ -95,9 +96,9 @@ function Section1() {
             marginTop: "0.8rem",
           }}
         >
-          <StatsCard number={"150+"} label="Clients" />
-          <StatsCard number={"120+"} label="Projects" />
-          <StatsCard number={"20+"} label="Years Experience" />
+          <StatsCard number={`${numberOfClients}+`} label="Clients" />
+          <StatsCard number={`${numberOfProjects}+`} label="Projects" />
+          <StatsCard number={`${yearsOfExperience}+`} label="Years Experience" />
         </Box>
       </Box>
       <Box

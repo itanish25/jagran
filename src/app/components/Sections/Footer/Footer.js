@@ -1,21 +1,22 @@
 import { Box, Divider, Typography } from "@mui/material";
 import Card from "@/app/components/Card/Card";
+import { phoneNumber, emailId, whatsappMessage, youtubeChannelLink, currentYear } from "@/app/constants/constants";
 
-const phoneNumber = "+919717715315"; // include country code without spaces
-const message = "Hello, I want to know more about your Jagran event."; // optional pre-filled message
+const number = phoneNumber; // include country code without spaces
+const message = whatsappMessage; // optional pre-filled message
 
 function Footer() {
     const handleClickPhone = () => {
-        window.location.href = `tel:${phoneNumber}`;
+        window.location.href = `tel:${number}`;
     }
 
     const handleClickWhatsApp = () => {
-        const url = `https://wa.me/${phoneNumber.replace("+", "")}?text=${encodeURIComponent(message)}`;
+        const url = `https://wa.me/${number.replace("+", "")}?text=${encodeURIComponent(message)}`;
         window.open(url, "_blank"); // opens in new tab or WhatsApp app on mobile
     }
 
     const handleClickYouTube = () => {
-        const url = "https://www.youtube.com/@NaveenSharma-mg7nc/featured";
+        const url = youtubeChannelLink;
         window.open(url, "_blank"); // opens in new tab or WhatsApp app on mobile
     }
 
@@ -43,21 +44,21 @@ function Footer() {
                     iconPath={"/Photos/call-icon.png"}
                     iconAlt={"phone"}
                     text1={"Call us from 8AM to 6PM"}
-                    text2={"+91-9717715315"}
+                    text2={number}
                     handleClick={handleClickPhone}
                 />
                 <Card
                     iconPath={"/Photos/mail-icon.png"}
                     iconAlt={"mail"}
                     text1={"Our team is there to help."}
-                    text2={"nkumar47459@gmail.com"}
+                    text2={emailId}
                     handleClick={handleClickWhatsApp}
                 />
                 <Card
                     iconPath={"/Photos/whatsapp-icon.png"}
                     iconAlt={"youtube"}
                     text1={"Connect with us on WhatsApp"}
-                    text2={"+91-9717715315"}
+                    text2={number}
                     handleClick={handleClickWhatsApp}
                 />
                 <Card
@@ -76,7 +77,7 @@ function Footer() {
                     textAlign: "center",
                 }}
             >
-                © 2025 Naveen Sharma. All rights reserved.
+                © {currentYear} Naveen Sharma. All rights reserved.
             </Typography>
             <br />
         </section>

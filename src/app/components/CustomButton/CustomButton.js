@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import Image from "next/image";
+import { phoneNumber, whatsappMessage, youtubeChannelAllVideosLink } from "@/app/constants/constants";
 
 function CustomButton({
   color = '#000000',
@@ -8,15 +9,15 @@ function CustomButton({
   iconPath = null,
   iconAlt = null,
   btnText = null,
-  openLink = "https://www.youtube.com/@NaveenSharma-mg7nc/videos",
+  openLink = youtubeChannelAllVideosLink,
 }) {
 
-  const phoneNumber = "+919717715315"; // include country code without spaces
-  const message = "Hello, I want to know more about your Jagran event."; // optional pre-filled message
+  const number = phoneNumber; // include country code without spaces
+  const message = whatsappMessage;
 
   const handleClick = () => {
     if (btnText === "Book Jagran" || btnText === "Book Now") {
-      const url = `https://wa.me/${phoneNumber.replace("+", "")}?text=${encodeURIComponent(message)}`;
+      const url = `https://wa.me/${number.replace("+", "")}?text=${encodeURIComponent(message)}`;
       window.open(url, "_blank"); // opens in new tab or WhatsApp app on mobile
     } else {
       window.open(openLink, "_blank");

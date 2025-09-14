@@ -1,5 +1,5 @@
 import Section4_1 from "./Section4_1/Section4_1";
-import CustomeButton from "@/app/components/CustomButton/CustomButton";
+import CustomButton from "@/app/components/CustomButton/CustomButton";
 
 function Section4() {
   return (
@@ -32,7 +32,7 @@ function Section4() {
         photoPath="/Photos/Photo_7.png"
         openLink={"https://www.youtube.com/watch?v=JRfl20DbzFE"}
       />
-      <CustomeButton
+      <CustomButton
         color="#FFFFFF"
         bgColor="#000000"
         btnText="View All Projects"

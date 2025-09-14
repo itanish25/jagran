@@ -9,6 +9,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
 import Link from "next/link";
+import { phoneNumber, whatsappMessage } from "@/app/constants/constants";
 
 const pages = [
   "Home",
@@ -30,12 +31,12 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
-  const phoneNumber = "+919717715315"; // include country code without spaces
-  const message = "Hello, I want to know more about your Jagran event."; // optional pre-filled message
+  const number = phoneNumber; // include country code without spaces
+  const message = whatsappMessage;
 
   const handleClickWhatsApp = (page) => {
     if (page === "Let's connect") {
-      const url = `https://wa.me/${phoneNumber.replace("+", "")}?text=${encodeURIComponent(message)}`;
+      const url = `https://wa.me/${number.replace("+", "")}?text=${encodeURIComponent(message)}`;
       window.open(url, "_blank"); // opens in new tab or WhatsApp app on mobile
     }
   }
@@ -46,7 +47,7 @@ function ResponsiveAppBar() {
       sx={{
         padding: "0.3rem 3rem",
         backgroundColor: "#000000",
-        marginTop: "2rem",
+        marginTop: { xs: "1.5rem", md: "2rem" },
       }}
     >
       <Box>

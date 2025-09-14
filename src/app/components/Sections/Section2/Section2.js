@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import InfoCard from "@/app/components/InfoCard/InfoCard";
+import { emailId, phoneNumber, yearsOfExperience, numberOfProjects } from "@/app/constants/constants";
 
 function Section2() {
   return (
@@ -85,10 +86,10 @@ function Section2() {
             gap: { xs: "1.5rem", md: "0" },
           }}
         >
-          <InfoCard heading={"contact"} content={"nkumar47459@gmail.com"} />
-          <InfoCard heading={"Phone"} content={"+91-9717715315"} />
-          <InfoCard heading={"Experience"} content={"20+ years"} />
-          <InfoCard heading={"Projects"} content={"120+"} />
+          <InfoCard heading={"contact"} content={emailId} />
+          <InfoCard heading={"Phone"} content={phoneNumber} />
+          <InfoCard heading={"Experience"} content={`${yearsOfExperience}+ years`} />
+          <InfoCard heading={"Projects"} content={`${numberOfProjects}+`} />
           <InfoCard heading={"Language"} content={"Hindi, English"} />
         </Box>
       </Box>

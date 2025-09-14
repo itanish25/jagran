@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import YouTubeEmbed from "@/app/components/YouTubeEmbed/YouTubeEmbed";
+import { eventsFirstYoutubeVideoId, eventsSecondYoutubeVideoId, eventsThirdYoutubeVideoId } from "@/app/constants/constants";
 
 function Section3() {
   return (
@@ -79,13 +80,13 @@ function Section3() {
         }}
       >
         <Box width="400px" minWidth="400px">
-          <YouTubeEmbed videoId="uFAW_5ZsHjM" />
+          <YouTubeEmbed videoId={eventsFirstYoutubeVideoId} />
         </Box>
         <Box width="400px" minWidth="400px">
-          <YouTubeEmbed videoId="5DJI5oRmj0g" />
+          <YouTubeEmbed videoId={eventsSecondYoutubeVideoId} />
         </Box>
         <Box width="400px" minWidth="400px">
-          <YouTubeEmbed videoId="7M2ltkrET_U" />
+          <YouTubeEmbed videoId={eventsThirdYoutubeVideoId} />
         </Box>
       </Box>
     </section>

@@ -1,6 +1,7 @@
 import { AppBar, Box, Typography } from "@mui/material";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
+import { phoneNumber, emailId } from "@/app/constants/constants";
 
 function Banner() {
   return (
@@ -21,13 +22,19 @@ function Banner() {
             padding: "0.3rem 0",
           }}
         >
-          <Typography sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+          <Typography sx={{
+            display: "flex", alignItems: "center", gap: 1,
+            fontSize: { xs: "0.8rem", md: "1rem" }
+          }}>
             <LocalPhoneIcon fontSize="small" />
-            +91-9717715315
+            {phoneNumber}
           </Typography>
-          <Typography sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+          <Typography sx={{
+            display: "flex", alignItems: "center", gap: 1,
+            fontSize: { xs: "0.8rem", md: "1rem" }
+          }}>
             <EmailIcon fontSize="small" />
-            nkumar47459@gmail.com
+            {emailId}
           </Typography>
         </Box>
         <Typography sx={{ display: { xs: "none", md: "flex" } }}>

@@ -10,8 +10,8 @@ const sora = Sora({
 });
 
 export const metadata = {
-  title: "Jagran",
-  description: "Next.js + MUI app",
+  title: "Mata ki Chowki",
+  description: "Mata ki Chowki",
 };
 
 export default function RootLayout({ children }) {

@@ -43,7 +43,7 @@ function Footer() {
                 <Card
                     iconPath={"/Photos/call-icon.png"}
                     iconAlt={"phone"}
-                    text1={"Call us from 8AM to 6PM"}
+                    text1={"Call us anytime – we are available 24/7."}
                     text2={number}
                     handleClick={handleClickPhone}
                 />

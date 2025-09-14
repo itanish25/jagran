@@ -19,8 +19,8 @@ export const projectsThirdVideoLink = "https://www.youtube.com/watch?v=JRfl20Dbz
 
 export const youtubeChannelAllVideosLink = "https://www.youtube.com/@NaveenSharma-mg7nc/videos";
 
-export const numberOfClients = 150;
-export const numberOfProjects = 200;
-export const yearsOfExperience = 20;
+export const numberOfClients = 570;
+export const numberOfProjects = 1800;
+export const yearsOfExperience = 30;
 
 export const currentYear = new Date().getFullYear();

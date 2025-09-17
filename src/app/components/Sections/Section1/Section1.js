@@ -111,7 +111,6 @@ function Section1() {
           src="/Photos/Photo_4.png"
           width="590"
           height="590"
-          style={{ width: "100%", height: "auto" }}
           alt="Photo_1"
         />
       </Box>

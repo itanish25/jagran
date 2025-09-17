@@ -104,13 +104,11 @@ function Section1() {
       <Box
         sx={{
           flex: 1,
-          height: "100vh",
           background: "linear-gradient(to right, #fceabb, #f8b500, #ffb347)",
         }}
       >
         <Image
           src="/Photos/Photo_4.png"
-          // src="/Photos/Photo_6_2.png"
           width="590"
           height="590"
           style={{ width: "100%", height: "auto" }}

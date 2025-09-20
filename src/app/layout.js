@@ -10,8 +10,13 @@ const sora = Sora({
 });
 
 export const metadata = {
-  title: "Mata ki Chowki",
-  description: "Mata ki Chowki",
+  title: "Mata ki Chowki by Naveen Sharma",
+  description: "Mata ki Chowki by Naveen Sharma",
+  icons: {
+    icon: "/favicon.png",       // default
+    shortcut: "/favicon.png",   // optional
+    apple: "/favicon.png",      // for iOS
+  },
 };
 
 export default function RootLayout({ children }) {

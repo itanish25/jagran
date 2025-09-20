@@ -9,7 +9,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Button from "@mui/material/Button";
 import Link from "next/link";
-import { phoneNumber, whatsappMessage } from "@/app/constants/constants";
+import { phoneNumber, whatsappMessage, websiteUrl } from "@/app/constants/constants";
 
 const pages = [
   "Home",
@@ -41,6 +41,10 @@ function ResponsiveAppBar() {
     }
   }
 
+  const handleClickLogo = () => {
+    window.open(websiteUrl, "_self");
+  }
+
   return (
     <AppBar
       position="static"
@@ -60,10 +64,12 @@ function ResponsiveAppBar() {
         >
           {/* md is 900px width */}
           <Box
+            onClick={handleClickLogo}
             sx={{
               display: { xs: "none", md: "flex" },
               justifyContent: "space-between",
               alignItems: "center",
+              cursor: 'pointer',
             }}
           >
             <Image src="/Photos/logo2.png" alt="logo" width="180" height="50" />

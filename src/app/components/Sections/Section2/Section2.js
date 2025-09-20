@@ -9,6 +9,7 @@ function Section2() {
       id="About"
       style={{
         padding: "5rem 3rem",
+        marginTop: '3rem',
       }}
     >
       <Box

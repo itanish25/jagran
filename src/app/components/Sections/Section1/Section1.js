@@ -103,15 +103,17 @@ function Section1() {
       </Box>
       <Box
         sx={{
-          // flex: 1,
+          position: "relative",   // required for fill
+          width: {xs: "100%", md: '50%'},
+          height: { xs: "250px", md: "600px" }, // responsive height
           background: "linear-gradient(to right, #fceabb, #f8b500, #ffb347)",
         }}
       >
         <Image
           src="/Photos/Photo_4.png"
-          width="590"
-          height="590"
-          alt="Photo_1"
+          alt="Photo_4"
+          fill               // tells Next.js to stretch inside parent
+          style={{ objectFit: "contain" }} // or "cover" depending on design
         />
       </Box>
     </Box>

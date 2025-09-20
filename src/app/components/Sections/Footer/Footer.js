@@ -47,7 +47,8 @@ function Footer() {
                     alignItems: "center",
                     width: "100%",
                     gap: { xs: '2rem', md: '0' },
-                    paddingBottom: '2rem'
+                    paddingBottom: '2rem',
+                    marginBottom: '1rem',
                 }}
             >
                 <Card

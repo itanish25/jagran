@@ -22,7 +22,7 @@ function Banner() {
         <Box
           sx={{
             display: "flex",
-            gap: { xs: "7rem", md: "2rem" },
+            gap: { xs: "5rem", md: "2rem" },
             padding: "0.3rem 0",
           }}
         >

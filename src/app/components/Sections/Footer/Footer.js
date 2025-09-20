@@ -101,7 +101,7 @@ function Footer() {
                 <Card
                     iconPath={"/Photos/google-logo.png"}
                     iconAlt={"google-review"}
-                    text1={"Share you review on Google Reviews!"}
+                    text1={"Share your reviews on Google Reviews!"}
                     text2={"Mata ki Chowki and Jagran by Naveen Sharma"}
                     handleClick={handleClickGoogleReview}
                 />

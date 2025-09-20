@@ -1,6 +1,6 @@
 import { Box, Divider, Typography } from "@mui/material";
 import Card from "@/app/components/Card/Card";
-import { phoneNumber, emailId, whatsappMessage, youtubeChannelLink, instagramPageLink, googleReviewLink, currentYear } from "@/app/constants/constants";
+import { phoneNumber, phoneNumber2, emailId, whatsappMessage, youtubeChannelLink, instagramPageLink, googleReviewLink, currentYear } from "@/app/constants/constants";
 
 const number = phoneNumber; // include country code without spaces
 const message = whatsappMessage; // optional pre-filled message
@@ -55,7 +55,7 @@ function Footer() {
                     iconPath={"/Photos/call-icon.png"}
                     iconAlt={"phone"}
                     text1={"Call us anytime – we are available 24/7."}
-                    text2={number}
+                    text2={`${phoneNumber}, ${phoneNumber2}`}
                     handleClick={handleClickPhone}
                 />
                 <Card

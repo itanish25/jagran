@@ -1,6 +1,6 @@
 import { Box, Divider, Typography } from "@mui/material";
 import Card from "@/app/components/Card/Card";
-import { phoneNumber, emailId, whatsappMessage, youtubeChannelLink, currentYear } from "@/app/constants/constants";
+import { phoneNumber, emailId, whatsappMessage, youtubeChannelLink, instagramPageLink, googleReviewLink, currentYear } from "@/app/constants/constants";
 
 const number = phoneNumber; // include country code without spaces
 const message = whatsappMessage; // optional pre-filled message
@@ -12,12 +12,22 @@ function Footer() {
 
     const handleClickWhatsApp = () => {
         const url = `https://wa.me/${number.replace("+", "")}?text=${encodeURIComponent(message)}`;
-        window.open(url, "_blank"); // opens in new tab or WhatsApp app on mobile
+        window.open(url, "_blank");
     }
 
     const handleClickYouTube = () => {
         const url = youtubeChannelLink;
-        window.open(url, "_blank"); // opens in new tab or WhatsApp app on mobile
+        window.open(url, "_blank");
+    }
+
+    const handleClickInstagram = () => {
+        const url = instagramPageLink;
+        window.open(url, "_blank");
+    }
+
+    const handleClickGoogleReview = () => {
+        const url = googleReviewLink;
+        window.open(url, "_blank");
     }
 
     return (
@@ -67,6 +77,32 @@ function Footer() {
                     text1={"See our social media"}
                     text2={"Naveen Sharma and Party"}
                     handleClick={handleClickYouTube}
+                />
+            </Box>
+            <Box
+                sx={{
+                    display: "flex",
+                    flexDirection: { xs: "column", md: "row" },
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "100%",
+                    gap: { xs: '2rem', md: '8rem' },
+                    paddingBottom: '2rem'
+                }}
+            >
+                <Card
+                    iconPath={"/Photos/instagram-logo.png"}
+                    iconAlt={"instagram"}
+                    text1={"See our Instagram handle"}
+                    text2={"navveen.sharma"}
+                    handleClick={handleClickInstagram}
+                />
+                <Card
+                    iconPath={"/Photos/google-logo.png"}
+                    iconAlt={"google-review"}
+                    text1={"Share you review on Google Reviews!"}
+                    text2={"Mata ki Chowki and Jagran by Naveen Sharma"}
+                    handleClick={handleClickGoogleReview}
                 />
             </Box>
             <Divider />

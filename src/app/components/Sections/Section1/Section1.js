@@ -103,7 +103,7 @@ function Section1() {
       </Box>
       <Box
         sx={{
-          flex: 1,
+          // flex: 1,
           background: "linear-gradient(to right, #fceabb, #f8b500, #ffb347)",
         }}
       >

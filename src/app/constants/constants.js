@@ -1,3 +1,5 @@
+export const websiteUrl = "https://matakichowkinaveensharma.com/"
+
 export const phoneNumber = "+919999980964";
 export const whatsappMessage = "Hello, I would like to get in touch with you regarding Mata ka Jagran.";
 
@@ -18,6 +20,8 @@ export const projectsSecondVideoLink = "https://www.youtube.com/watch?v=6Vi74FHI
 export const projectsThirdVideoLink = "https://www.youtube.com/watch?v=JRfl20DbzFE";
 
 export const youtubeChannelAllVideosLink = "https://www.youtube.com/@NaveenSharma-mg7nc/videos";
+export const instagramPageLink = "https://www.instagram.com/navveen.sharmaa?igsh=MThlZm5xMG45Zmcydw=="
+export const googleReviewLink = "https://g.page/r/CemVr_DddtNmEBM/review"
 
 export const numberOfClients = 570;
 export const numberOfProjects = 1800;

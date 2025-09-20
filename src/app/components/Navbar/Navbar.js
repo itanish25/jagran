@@ -155,7 +155,12 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <Box sx={{ display: { xs: "flex", md: "none" } }}>
+          <Box
+            onClick={handleClickLogo}
+            sx={{
+              display: { xs: "flex", md: "none" }
+            }}
+          >
             <Image src="/Photos/logo2.png" alt="logo" width="180" height="50" />
           </Box>
         </Box>

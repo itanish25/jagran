@@ -1,6 +1,7 @@
 export const websiteUrl = "https://matakichowkinaveensharma.com/"
 
 export const phoneNumber = "+919999980964";
+export const phoneNumber2 = "+919717715315"
 export const whatsappMessage = "Hello, I would like to get in touch with you regarding Mata ka Jagran.";
 
 export const emailId = "nkumar47459@gmail.com";

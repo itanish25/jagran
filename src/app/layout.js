@@ -2,6 +2,7 @@ import { Sora } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import ThemeRegistry from "../../theme";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const sora = Sora({
   subsets: ["latin"],
@@ -25,18 +26,7 @@ export default function RootLayout({ children }) {
       <body className={sora.className}>
         <ThemeRegistry>{children}</ThemeRegistry>
 
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-K0DWED2ZPH"
-          strategy="afterInteractive"
-        />
-        <Script id="google-ads" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-K0DWED2ZPH');
-          `}
-        </Script>
+        <GoogleAnalytics gaId="AW-11500608369" />
       </body>
     </html>
   );

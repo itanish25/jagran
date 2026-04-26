@@ -11,6 +11,10 @@ export const youtubeChannelLink = "https://www.youtube.com/@NaveenSharma-mg7nc/f
 export const eventsFirstYoutubeVideoId = "uFAW_5ZsHjM";
 export const eventsSecondYoutubeVideoId = "5DJI5oRmj0g";
 export const eventsThirdYoutubeVideoId = "7M2ltkrET_U";
+export const eventsFourthYoutubeVideoId = "FZ1UPquvntc";
+export const eventsFifthYoutubeVideoId = "1hQHJqfA2U4";
+export const eventsSixthYoutubeVideoId = "DU75u4s5yWk";
+export const eventsSeventhYoutubeVideoId = "5XZ8_ksd50s";
 
 export const projectsFirstImageLink = "/Photos/Photo_5.png";
 export const projectsSecondImageLink = "/Photos/Photo_6.png";

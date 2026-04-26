@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import YouTubeEmbed from "@/app/components/YouTubeEmbed/YouTubeEmbed";
-import { eventsFirstYoutubeVideoId, eventsSecondYoutubeVideoId, eventsThirdYoutubeVideoId } from "@/app/constants/constants";
+import { eventsFirstYoutubeVideoId, eventsSecondYoutubeVideoId, eventsThirdYoutubeVideoId, eventsFourthYoutubeVideoId, eventsFifthYoutubeVideoId, eventsSixthYoutubeVideoId, eventsSeventhYoutubeVideoId } from "@/app/constants/constants";
 
 function Section3() {
   return (
@@ -88,6 +88,44 @@ function Section3() {
         <Box width="400px" minWidth="400px">
           <YouTubeEmbed videoId={eventsThirdYoutubeVideoId} />
         </Box>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          justifyContent: "center",
+          alignItems: "center",
+          gap: { xs: "2rem", md: "1rem" },
+          flexWrap: "nowrap", // keep them in a row
+          overflowx: "auto", // scroll if it overflows
+          padding: "1rem",
+        }}
+      >
+        <Box width="400px" minWidth="400px">
+          <YouTubeEmbed videoId={eventsFourthYoutubeVideoId} />
+        </Box>
+        <Box width="400px" minWidth="400px">
+          <YouTubeEmbed videoId={eventsFifthYoutubeVideoId} />
+        </Box>
+        <Box width="400px" minWidth="400px">
+          <YouTubeEmbed videoId={eventsSixthYoutubeVideoId} />
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          justifyContent: "center",
+          alignItems: "center",
+          gap: { xs: "2rem", md: "1rem" },
+          flexWrap: "nowrap", // keep them in a row
+          overflowx: "auto", // scroll if it overflows
+          padding: "1rem",
+        }}
+      >
+       <Box width="400px" minWidth="400px">
+          <YouTubeEmbed videoId={eventsSeventhYoutubeVideoId} />
+        </Box> 
       </Box>
     </section>
   );

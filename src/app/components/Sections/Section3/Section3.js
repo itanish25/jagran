@@ -123,11 +123,100 @@ function Section3() {
           padding: "1rem",
         }}
       >
-       <Box width="400px" minWidth="400px">
+        <Box width="400px" minWidth="400px">
+          <Image
+            src="/Photos/MataPandal_1.jpeg"
+            alt="Photo_1"
+            width={590}
+            height={700}
+            style={{
+              width: "100%", // responsive
+              height: "auto",
+              maxWidth: "590px",
+            }}
+          />
+        </Box>
+        <Box width="400px" minWidth="400px">
           <YouTubeEmbed videoId={eventsSeventhYoutubeVideoId} />
-        </Box> 
+        </Box>
+        <Box width="400px" minWidth="400px">
+          <Image
+            src="/Photos/MataPandal_2.jpeg"
+            alt="Photo_1"
+            width={590}
+            height={700}
+            style={{
+              width: "100%", // responsive
+              height: "auto",
+              maxWidth: "590px",
+            }}
+          />
+        </Box>
       </Box>
-    </section>
+      <Box
+        width="2000px"
+        minWidth="2000px"
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Image
+          src="/Photos/MataPandal_3.jpeg"
+          alt="Photo_1"
+          width={590}
+          height={700}
+          style={{
+            width: "100%", // responsive
+            height: "auto",
+            maxWidth: "590px",
+          }}
+        />
+      </Box>
+      <Box
+        width="2000px"
+        minWidth="2000px"
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Image
+          src="/Photos/MataPandal_4.jpeg"
+          alt="Photo_1"
+          width={590}
+          height={700}
+          style={{
+            width: "100%", // responsive
+            height: "auto",
+            maxWidth: "590px",
+          }}
+        />
+      </Box>
+      <Box
+        width="2000px"
+        minWidth="2000px"
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Image
+          src="/Photos/MataPandal_5.jpeg"
+          alt="Photo_1"
+          width={590}
+          height={700}
+          style={{
+            width: "100%", // responsive
+            height: "auto",
+            maxWidth: "590px",
+          }}
+        />
+      </Box>
+    </section >
   );
 }
 
